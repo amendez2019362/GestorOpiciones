@@ -2,7 +2,7 @@ import { Router } from "express";
 import { check } from "express-validator";
 import { validateFields } from "../middlewares/validate-fields.js";
 import { publicationDelete, publicationGet, publicationPost, publicationPut } from "./publication.controller.js";
-import validateJWT from "../middlewares/validate-jwt.js"
+import {validateJWT} from "../middlewares/validate-jwt.js"
 
 const router = Router();
 

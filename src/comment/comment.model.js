@@ -23,7 +23,7 @@ const commentSchema = mongoose.Schema({
     }
 })
 
-CommentSchema.methods.toJSON = function () {
+commentSchema.methods.toJSON = function () {
     const { __v, _id, status, ...comment } = this.toObject();
     comment.uid = _id;
     return comment

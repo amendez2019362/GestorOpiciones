@@ -1,32 +1,41 @@
-import mongoose from "mongoose";
+import { Router } from "express";
+import { check } from "express-validator";
+import { validateJWT } from "../middlewares/validate-jwt.js";
+import { validateFields } from "../middlewares/validate-fields.js";
+import { commentDelete, commentGet, commentPost, commentPut } from "./comment.controller.js";
 
-const commentSchema = mongoose.Schema({
-    publicationId:{
-        type: Schema.Types.ObjectId,
-        ref: 'Publication'
-    },
-    userId: {
-        type: Schema.Types.ObjectId,
-        ref: 'User'
-    },
-    commentTitle:{
-        type: String,
-        require: [true, "Required field"]
-    },
-    commentContent:{
-        type: String,
-        require: [true, "Required field"]
-    },
-    status:{
-        type: Boolean,
-        default:true
-    }
-})
+const router = Router();
 
-CommentSchema.methods.toJSON=function(){
-    const { __v, _id, status, ...comment} = this.toObject();
-    comment.uid = _id;
-    return comment
-}
+router.get("/",
+    commentGet
+);
 
-export default mongoose.model('Comment', commentSchema);
+router.post(
+    "/",
+    [
+       validateJWT,
+       check('publicationId', 'Invalid format for MongoDB').isMongoId(),
+       check('commentTitle', 'Title is required').not().isEmpty(),
+       check('commentContent', 'Content is required').not().isEmpty(),
+       validateFields
+    ], commentPost
+);
+
+router.put(
+    "/:id",
+    [
+        validateJWT,
+        check('commentTitle', 'Title is required').not().isEmpty(),
+        check('commentContent', 'Content is required').not().isEmpty(),
+    ], commentPut
+);
+
+router.delete(
+    '/:id',
+    [
+        validateJWT,
+        validateFields
+    ], commentDelete
+);
+
+export default router;
