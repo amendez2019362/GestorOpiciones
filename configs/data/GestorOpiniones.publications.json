@@ -1,0 +1,52 @@
+[{
+  "_id": {
+    "$oid": "65e4cb05d84f320f2b3417c8"
+  },
+  "userId": {
+    "$oid": "65e4c764d84f320f2b3417b4"
+  },
+  "title": "Haikyu",
+  "category": "Manga",
+  "mainText": "Se trata de boleibol",
+  "status": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e4ce543cf8477e0a4bd4bf"
+  },
+  "userId": {
+    "$oid": "65e4c764d84f320f2b3417b4"
+  },
+  "title": "El principito",
+  "category": "ficcion",
+  "mainText": "Este libro trata de un niño que va en planetas",
+  "status": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e4d05d8ad77941321fea4b"
+  },
+  "userId": {
+    "$oid": "65e4c764d84f320f2b3417b4"
+  },
+  "title": "Haikyu",
+  "category": "Manga",
+  "mainText": "Trata sobre boleibol",
+  "status": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e4d5025d9593b51cbef4fd"
+  },
+  "userId": {
+    "$oid": "65e4d3f15d9593b51cbef4db"
+  },
+  "title": "popolbu",
+  "category": "historia",
+  "mainText": "historia de los mayas",
+  "status": true,
+  "__v": 0
+}]

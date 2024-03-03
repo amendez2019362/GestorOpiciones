@@ -1,0 +1,90 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Publication",
+    "dateExported": "2024-03-03T19:47:32.332Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "c0e65085-f29a-4194-bdce-b06d524b3974",
+            "colId": "de37a765-ccac-440f-beb9-a979ad433f3c",
+            "containerId": "",
+            "name": "newPublication",
+            "url": "http://localhost:3000/GestorOpiniones/v1/publication/newPublication",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-03T19:07:17.037Z",
+            "modified": "2024-03-03T19:32:45.779Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0Yzc2NGQ4NGYzMjBmMmIzNDE3YjQiLCJpYXQiOjE3MDk0OTI3MjUsImV4cCI6MTcwOTQ5NjMyNX0.MBAjeby4lv3ojkWtyOrgNDLXEzgniyoY-94taJVWJKc"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Haikyu\",\n  \"category\": \"Manga\",\n  \"mainText\": \"Trata sobre boleibol\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "71e38379-c815-4d2e-a24b-17dc7ad8fec3",
+            "colId": "de37a765-ccac-440f-beb9-a979ad433f3c",
+            "containerId": "",
+            "name": "viewPublication",
+            "url": "http://localhost:3000/GestorOpiniones/v1/publication/viewPublication",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-03-03T19:10:16.187Z",
+            "modified": "2024-03-03T19:10:48.981Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b67c21b1-b7bd-4ac3-9dbb-cb15a58d9f0e",
+            "colId": "de37a765-ccac-440f-beb9-a979ad433f3c",
+            "containerId": "",
+            "name": "editPublication",
+            "url": "http://localhost:3000/GestorOpiniones/v1/publication/editPublication/65e4cb05d84f320f2b3417c8",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-03-03T19:13:14.163Z",
+            "modified": "2024-03-03T19:23:54.270Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0Yzc2NGQ4NGYzMjBmMmIzNDE3YjQiLCJpYXQiOjE3MDk0OTM0MjcsImV4cCI6MTcwOTQ5NzAyN30.DKzeE7OytEDrDv8WyN5A24IJOLrA_1aRJpGMCAaWSFQ"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Haikyu\",\n  \"category\": \"Manga\",\n  \"mainText\": \"Se trata de boleibol\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e9dffb11-b973-4d3f-ae8d-eff9a17662a6",
+            "colId": "de37a765-ccac-440f-beb9-a979ad433f3c",
+            "containerId": "",
+            "name": "deletePublication",
+            "url": "http://localhost:3000/GestorOpiniones/v1/publication/deletePublication/65e4cb05d84f320f2b3417c8",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-03-03T19:24:24.125Z",
+            "modified": "2024-03-03T19:26:06.539Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0Yzc2NGQ4NGYzMjBmMmIzNDE3YjQiLCJpYXQiOjE3MDk0OTM0MjcsImV4cCI6MTcwOTQ5NzAyN30.DKzeE7OytEDrDv8WyN5A24IJOLrA_1aRJpGMCAaWSFQ"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

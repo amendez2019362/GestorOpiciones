@@ -1,0 +1,47 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Login",
+    "dateExported": "2024-03-03T19:47:13.779Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "d9291a73-3905-4a47-b667-41cdec31f206",
+            "colId": "5b1a003f-4af6-4b85-b4af-330cd25c9eac",
+            "containerId": "",
+            "name": "registUser",
+            "url": "http://localhost:3000/GestorOpiniones/v1/user/registUser",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-03T18:52:02.081Z",
+            "modified": "2024-03-03T18:54:00.602Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"yo\",\n  \"email\": \"yo@kinal.com\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1c9afbb0-a16d-453c-839f-70ea4b3550ce",
+            "colId": "5b1a003f-4af6-4b85-b4af-330cd25c9eac",
+            "containerId": "",
+            "name": "login",
+            "url": "http://localhost:3000/GestorOpiniones/v1/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-03T18:52:15.043Z",
+            "modified": "2024-03-03T19:05:25.370Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Angel\",\n  \"password\": \"654321\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

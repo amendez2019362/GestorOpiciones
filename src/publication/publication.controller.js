@@ -46,10 +46,15 @@ export const publicationPut = async (req, res) => {
         const { __v, _id, status, ...rest } = req.body;
         const userId = req.user._id;
         const publicationId = req.params.id;
-
         const publication = await Publication.findById(publicationId);
 
         if (!publication) {
+            return res.status(404).json({
+                msg: 'Post not found'
+            });
+        }
+
+        if (!publication.status) {
             return res.status(404).json({
                 msg: 'Post not found'
             });

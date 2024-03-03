@@ -16,16 +16,16 @@ class Server {
         this.port = process.env.PORT;
 
         this.loginPath = '/GestorOpiniones/v1/login';
-        this.registUserPath = '/GestorOpiniones/v1/registUser';
-        this.editUserPath = '/GestorOpiniones/v1/userEdit';
-        this.newPublicationPath = '/GestorOpiniones/v1/newPublication';
-        this.editPublicationPath= '/GestorOpiniones/v1/editPublication';
-        this.deletePublicationPath = '/GestorOpiniones/v1/deletePublication';
-        this.viewPublicationPath = '/GestorOpiniones/v1/viewPublication';
-        this.newCommentPath = '/GestorOpiniones/v1/newComment';
-        this.editCommentPath = '/GestorOpiniones/v1/editComment';
-        this.deleteCommentPath = '/GestorOpiniones/v1/deleteComment';
-        this.viewCommentPath = '/GestorOpiniones/v1/viewComment';
+        this.registUserPath = '/GestorOpiniones/v1/user/registUser';
+        this.editUserPath = '/GestorOpiniones/v1/user/userEdit';
+        this.newPublicationPath = '/GestorOpiniones/v1/publication/newPublication';
+        this.editPublicationPath= '/GestorOpiniones/v1/publication/editPublication';
+        this.deletePublicationPath = '/GestorOpiniones/v1/publication/deletePublication';
+        this.viewPublicationPath = '/GestorOpiniones/v1/publication/viewPublication';
+        this.newCommentPath = '/GestorOpiniones/v1/comment/newComment';
+        this.editCommentPath = '/GestorOpiniones/v1/comment/editComment';
+        this.deleteCommentPath = '/GestorOpiniones/v1/comment/deleteComment';
+        this.viewCommentPath = '/GestorOpiniones/v1/comment/viewComment';
 
         this.middlewares();
         this.conectarDB();

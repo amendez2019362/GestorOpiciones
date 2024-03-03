@@ -1,0 +1,33 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Users",
+    "dateExported": "2024-03-03T19:47:27.788Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "90a01dce-04e7-49df-9696-b05773ccbcb9",
+            "colId": "f7f428d1-5be0-43e6-86b2-c56a0e531d95",
+            "containerId": "",
+            "name": "editUser",
+            "url": "http://localhost:3000/GestorOpiniones/v1/user/userEdit",
+            "method": "PUT",
+            "sortNum": 10000,
+            "created": "2024-03-03T18:58:23.259Z",
+            "modified": "2024-03-03T19:00:54.523Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOsJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0Yzc2NGQ4NGYzMjBmMmIzNDE3YjQiLCJpYXQiOjE3MDk0OTIyMzcsImV4cCI6MTcwOTQ5NTgzN30.qQSRA1Tal4d2-m2sGE3PoeZujAGybn5naoavKWyvF7k"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Angel\",\n  \"email\": \"angel@kinal.com\",\n  \"oldPassword\": \"123456\",\n  \"newPassword\": \"654421\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

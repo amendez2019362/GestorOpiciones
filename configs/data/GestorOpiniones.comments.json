@@ -1,0 +1,45 @@
+[{
+  "_id": {
+    "$oid": "65e4d01c8ad77941321fea46"
+  },
+  "publicationId": {
+    "$oid": "65e4ce543cf8477e0a4bd4bf"
+  },
+  "userId": {
+    "$oid": "65e4c764d84f320f2b3417b4"
+  },
+  "commentTitle": "El principito",
+  "commentContent": "ya me gusto",
+  "status": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e4d07c8ad77941321fea51"
+  },
+  "publicationId": {
+    "$oid": "65e4d05d8ad77941321fea4b"
+  },
+  "userId": {
+    "$oid": "65e4c764d84f320f2b3417b4"
+  },
+  "commentTitle": "Haikyu",
+  "commentContent": "SI me gusto",
+  "status": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e4d5235d9593b51cbef503"
+  },
+  "publicationId": {
+    "$oid": "65e4d5025d9593b51cbef4fd"
+  },
+  "userId": {
+    "$oid": "65e4c764d84f320f2b3417b4"
+  },
+  "commentTitle": "popolbu",
+  "commentContent": "ta feo, aburrido",
+  "status": true,
+  "__v": 0
+}]

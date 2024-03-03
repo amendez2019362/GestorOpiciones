@@ -1,0 +1,90 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Comment",
+    "dateExported": "2024-03-03T19:47:36.845Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "a72eeb19-11db-4af1-a490-5d2ab29360a8",
+            "colId": "89f22a81-2f1a-44d2-afae-86cf4f06cff6",
+            "containerId": "",
+            "name": "newComment",
+            "url": "http://localhost:3000/GestorOpiniones/v1/comment/newComment",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-03T19:27:37.652Z",
+            "modified": "2024-03-03T19:33:16.930Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0Yzc2NGQ4NGYzMjBmMmIzNDE3YjQiLCJpYXQiOjE3MDk0OTM0MjcsImV4cCI6MTcwOTQ5NzAyN30.DKzeE7OytEDrDv8WyN5A24IJOLrA_1aRJpGMCAaWSFQ"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"publicationId\": \"65e4d05d8ad77941321fea4b\",\n  \"commentTitle\": \"Haikyu\",\n  \"commentContent\": \"SI me gusto\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4321c767-cd7d-4f5a-986e-bc18006334e8",
+            "colId": "89f22a81-2f1a-44d2-afae-86cf4f06cff6",
+            "containerId": "",
+            "name": "viewComment",
+            "url": "http://localhost:3000/GestorOpiniones/v1/comment/viewComment",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-03-03T19:32:01.338Z",
+            "modified": "2024-03-03T19:32:11.217Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5d19848a-dde2-49d9-a3ab-235274a9bb10",
+            "colId": "89f22a81-2f1a-44d2-afae-86cf4f06cff6",
+            "containerId": "",
+            "name": "editComment",
+            "url": "http://localhost:3000/GestorOpiniones/v1/comment/editComment/65e4d01c8ad77941321fea46",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-03-03T19:33:31.324Z",
+            "modified": "2024-03-03T19:35:56.435Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0Yzc2NGQ4NGYzMjBmMmIzNDE3YjQiLCJpYXQiOjE3MDk0OTM0MjcsImV4cCI6MTcwOTQ5NzAyN30.DKzeE7OytEDrDv8WyN5A24IJOLrA_1aRJpGMCAaWSFQ"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"commentTitle\": \"El principito\",\n  \"commentContent\": \"ya me gusto\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "5ff7de3d-34cf-4351-a6cb-9765b3b37aae",
+            "colId": "89f22a81-2f1a-44d2-afae-86cf4f06cff6",
+            "containerId": "",
+            "name": "deleteComment",
+            "url": "http://localhost:3000/GestorOpiniones/v1/comment/deleteComment/65e4d01c8ad77941321fea46",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-03-03T19:36:15.272Z",
+            "modified": "2024-03-03T19:37:34.469Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0Yzc2NGQ4NGYzMjBmMmIzNDE3YjQiLCJpYXQiOjE3MDk0OTM0MjcsImV4cCI6MTcwOTQ5NzAyN30.DKzeE7OytEDrDv8WyN5A24IJOLrA_1aRJpGMCAaWSFQ"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

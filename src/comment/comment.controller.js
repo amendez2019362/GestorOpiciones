@@ -22,7 +22,7 @@ export const commentGet = async (req, res = response) => {
 
 export const commentPost = async (req, res,) => {
     try {
-        const { commentTitle, commentContent, publicationId } = req.body();
+        const { commentTitle, commentContent, publicationId } = req.body;
         const userId = req.user._id;
         const publication = await Publication.findById(publicationId);
 
